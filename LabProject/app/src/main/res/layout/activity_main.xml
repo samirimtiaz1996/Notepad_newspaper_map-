@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/gameButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:onClick="buttonTapped"
+        android:text="game"
+        android:textStyle="normal|bold|italic" />
+
+    <Button
+        android:id="@+id/newspaperButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameButton"
+        android:layout_alignParentStart="true"
+        android:onClick="buttonTapped"
+        android:text="newspaper(Using api provided by hacker-news)"
+        android:textStyle="normal|bold|italic" />
+
+    <Button
+        android:id="@+id/notepadButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newspaperButton"
+        android:layout_alignParentStart="true"
+        android:onClick="buttonTapped"
+        android:text="Notepad"
+        android:textStyle="normal|bold|italic" />
+
+    <Button
+        android:id="@+id/mapButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notepadButton"
+        android:layout_alignParentStart="true"
+        android:onClick="buttonTapped"
+        android:text="Favourite place and current location"
+        android:textStyle="normal|bold|italic" />
+
+    <Button
+        android:id="@+id/guessingGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mapButton"
+        android:layout_alignParentStart="true"
+        android:text="game2"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/historicalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guessingGame"
+        android:layout_alignParentStart="true"
+        android:text="historical event list"
+        android:visibility="invisible" />
+
+</RelativeLayout>
